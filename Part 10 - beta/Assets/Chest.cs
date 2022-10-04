@@ -23,8 +23,8 @@ public class Chest : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         open = true;
-        UpdateChestData();
         chestUi.gameObject.SetActive(true);
+        UpdateChestData();
     }
     private void OnTriggerExit(Collider other)
     {
